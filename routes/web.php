@@ -23,9 +23,8 @@ Route::get('/about', 'StaticPagesController@about')->name('about');
 Route::get('signup', 'UsersController@create')->name('signup');
 Route::resource('users', 'UsersController');
 
-//显示登陆页面
-Route::get('login','SessionsController@create')->name('login');
-//登陆
-Route::post('login','SessionsController@store')->name('login');
-//销毁会话
-Route::delete('logout','SessionsController@destroy')->name('logout');
+Route::get('login', 'SessionsController@create')->name('login');
+Route::post('login', 'SessionsController@store')->name('login');
+Route::delete('logout', 'SessionsController@destroy')->name('logout');
+
+Route::get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email');
