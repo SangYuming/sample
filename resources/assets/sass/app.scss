@@ -5,66 +5,66 @@ $navbar-color: #3c3e42;
 /* universal */
 
 body {
-  padding-top: 60px;
+    padding-top: 60px;
 }
 
 section {
-  overflow: auto;
+    overflow: auto;
 }
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 .jumbotron {
-  text-align: center;
+    text-align: center;
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+    line-height: 1;
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: #777;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: #777;
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+    font-size: 1.1em;
+    line-height: 1.7em;
 }
 
 /* header */
 
 .navbar-inverse {
-  background-color: $navbar-color;
+    background-color: $navbar-color;
 }
 
 #logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  &:hover {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
     color: #fff;
-  }
+    text-decoration: none;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+    &:hover {
+        color: #fff;
+    }
 }
 
 #logout {
@@ -77,44 +77,43 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
 
-  a {
-    color: #555;
-  }
-
-  a:hover {
-    color: #222;
-  }
-
-  small {
-    float: left;
-  }
-
-  ul {
-    float: right;
-    list-style: none;
-
-    li {
-      float: left;
-      margin-left: 15px;
+    a {
+        color: #555;
     }
-  }
 
-  img.brand-icon {
-    width: 17px;
-    height: 17px;
-  }
+    a:hover {
+        color: #222;
+    }
 
-  .slogon {
-    font-size: 13px;
-    font-weight: bold;
-  }
+    small {
+        float: left;
+    }
+
+    ul {
+        float: right;
+        list-style: none;
+
+        li {
+            float: left;
+            margin-left: 15px;
+        }
+    }
+
+    img.brand-icon {
+        width: 17px;
+        height: 17px;
+    }
+
+    .slogon {
+        font-size: 13px;
+        font-weight: bold;
+    }
 }
-
 
 /* sidebar */
 
@@ -157,7 +156,6 @@ section.user_info {
     border-radius: 50%;
 }
 
-
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -173,7 +171,6 @@ input {
     margin-top: 50px;
 }
 
-
 /* Users edit */
 .gravatar_edit {
     margin: 15px auto;
@@ -184,16 +181,15 @@ input {
     }
 }
 
-
 /* Users index */
-.users{
+.users {
     list-style: none;
     margin: 0;
     padding-left: 0;
 
-    li{
+    li {
         overflow: auto;
-        padding:10px 0;
+        padding: 10px 0;
         border-bottom: 1px solid $gray-lighter;
     }
 }
@@ -202,4 +198,57 @@ input {
     float: right;
     position: relative;
     right: 0;
+}
+
+/*statuses*/
+
+.statuses {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    li {
+        padding: 10px 0;
+        border-top: 1px solid #e8e8e8;
+        position: relative;
+    }
+    .user {
+        margin-top: 5em;
+        padding-top: 0;
+    }
+    .content {
+        display: block;
+        margin-left: 60px;
+        word-break: break-word;
+        img {
+            display: block;
+            padding: 5px 0;
+        }
+    }
+    .timestamp {
+        color: $gray-light;
+        display: block;
+        margin-left: 60px;
+    }
+    .gravatar {
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    form {
+        button.status-delete-btn {
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+    }
+}
+
+aside {
+    textarea {
+        height: 100px;
+        margin-bottom: 5px;
+    }
+}
+
+.status_form {
+    margin-top: 20px;
 }
