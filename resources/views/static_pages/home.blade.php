@@ -21,11 +21,8 @@
         </div>
     @else
         <div class="jumbotron">
-            <h1>Welcome to my Weibo</h1>
-            <p class="lead">
-                你现在所看到的是 <a href="https://laravel-china.org/courses/laravel-essential-training-5.5">测试</a>
-                的项目主页。
-            </p>
+            <h1>Welcome to Yuming Weibo</h1>
+
             <p>
                 一切，将从这里开始。
             </p>
